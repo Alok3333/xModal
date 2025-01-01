@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "./Modal.module.css";
+import "../App.css";
 
 const Modal = ({ setIsOpen }) => {
   return (
     <>
       <div className={styles.darkBG} onClick={() => setIsOpen(false)} />
       <div className={styles.centered}>
-        <div className={styles.modal}>
+        <div className="modal">
           <div className={styles.modalHeader}>
             <h2 className={styles.heading}>Fill Details</h2>
           </div>
-          <div className={styles.modalContent}>
+          <div className="modal-content">
             <form>
               {/* <caption>Fill Details</caption> */}
               <label for="username" className={styles.inpurLabel}>Username:</label>
@@ -61,7 +62,7 @@ const Modal = ({ setIsOpen }) => {
               <br />
               <br />
 
-              <button className={styles.deleteBtn}>Submit</button>
+              <button className="submit-button">Submit</button>
             </form>
           </div>
           {/* <div className={styles.modalActions}>
