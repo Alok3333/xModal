@@ -2,3 +2,12 @@
     margin: 0;
     padding: 10px;
 }
+
+.openBtn {
+    cursor: pointer;
+    padding: 13px 25px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background: #3e95ff;
+}
